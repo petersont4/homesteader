@@ -20,7 +20,7 @@
 			<label for="laid_by" class="block font-medium mb-1">Laid By: </label>
 			<select name="laid_by" id="laid_by" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-600">
 				@foreach ($chickens as $chicken)
-					<option value="{{ $chicken->id }}">{{ $chicken->chicken_identifier }}</option>
+					<option value="{{ $chicken->id }}" data-egg-color="{{ $chicken->egg_color }}">{{ $chicken->chicken_identifier }}</option>
 				@endforeach
 			</select>
 		</div>
