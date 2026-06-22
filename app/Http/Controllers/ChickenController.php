@@ -30,6 +30,6 @@ class ChickenController extends Controller
 
 		$chicken = Chicken::create($validated);
 
-		return redirect('/chickens');
+		return redirect()->route('chickens.index');
 	}
 }
