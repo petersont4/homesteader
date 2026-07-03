@@ -19,6 +19,8 @@
 		<a href="{{ route('chickens.create') }}" class="hover:underline">Add Chicken</a>
 		<a href="{{ route('eggs.index') }}" class="hover:underline">All Eggs</a>
 		<a href="{{ route('eggs.create') }}" class="hover:underline">Add Egg</a>
+		<a href="{{ route('gardens.index') }}" class="hover:underline">All Gardens</a>
+		<a href="{{ route('gardens.create') }}" class="hover:underline">Add Garden</a>
 	</nav>
 	<div class="flex-1 p-6 pt-20 md:pt-6">
 		@yield('content')
