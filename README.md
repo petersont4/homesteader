@@ -32,6 +32,7 @@ cd homesteader
 ### 2. Install PHP dependencies
 
 ```bash
+apt install php8.5-xml php8.5-mysql npm vite
 composer install
 ```
 
