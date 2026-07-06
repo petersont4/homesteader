@@ -83,6 +83,18 @@ php artisan migrate
 npm run build
 ```
 
+### 8. Seed the database
+Run the following command to fill the database with fake data. 
+```bash
+php artisan migrate:fresh --seed
+```
+
+If you would like to fill just one module with data, use one of the below commands.
+```bash
+php artisan db:seed --class=ChickenSeeder
+php artisan db:seed --class=GardenSeeder
+```
+
 ## Running the Application
 
 ### Local development

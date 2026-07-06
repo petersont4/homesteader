@@ -3,10 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use App\Models\Harvest;
 
 class Plant extends Model
 {
+    use HasFactory;
     protected $fillable = [
         'type',
         'garden_location',

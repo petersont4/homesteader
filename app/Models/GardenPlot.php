@@ -4,9 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Plant;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class GardenPlot extends Model
 {
+    use HasFactory;
     protected $fillable = [
         'plot_location',
         'plot_garden',
