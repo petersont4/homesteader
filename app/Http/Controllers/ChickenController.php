@@ -24,7 +24,7 @@ class ChickenController extends Controller
 		$validated = $request->validate([
 			'chicken_identifier' => 'required|string|max:255',
 			'egg_color' => 'required|string|max:255',
-			'breed' => 'required|string|max:20',
+			'breed' => 'required|string|max:255',
 			'hatch_date' => 'required|date',
 		]);
 
